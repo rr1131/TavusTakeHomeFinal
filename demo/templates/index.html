@@ -1,0 +1,28 @@
+<!--
+Minimal UI shell for Tavus CVI demo.
+-->
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>CVI Public Speaking Coach</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui; margin: 24px; }
+    button { padding: 10px 14px; cursor: pointer; }
+    iframe { width: 100%; height: 720px; border: 1px solid #ddd; margin-top: 16px; border-radius: 12px; }
+    .muted { color: #666; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>Tavus Customer Advocate TakeHome</h1>
+
+  <button id="startBtn">Start Session</button>
+  <span id="status" class="muted"></span>
+  <a id="openLink" class='open-link' target="_blank">Open session in a new tab</a>
+  <iframe id="frame" allow="camera; microphone; autoplay; fullscreen"></iframe>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
